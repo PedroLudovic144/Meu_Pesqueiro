@@ -1,0 +1,16 @@
+.home-container {
+  padding: 20px;
+  background-color: #A6D4FA;
+  border-radius: 8px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  background: #3A95DF;
+  margin: 5px 0;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+}

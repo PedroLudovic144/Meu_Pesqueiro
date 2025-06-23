@@ -1,0 +1,18 @@
+<div class="home-container">
+  <h2>Cadastro de Pesqueiros</h2>
+
+  <input [(ngModel)]="nome" placeholder="Nome">
+  <input [(ngModel)]="local" placeholder="Local">
+  <input [(ngModel)]="peixes" placeholder="Peixes">
+  <button (click)="adicionar()">Adicionar</button>
+
+  <br><br>
+  <input [(ngModel)]="filtro" placeholder="Buscar pesqueiro...">
+
+  <ul>
+    <li *ngFor="let p of filtrados">
+      {{p.nome}} - {{p.local}} - {{p.peixes}}
+      <button (click)="deletar(p.id)">Excluir</button>
+    </li>
+  </ul>
+</div>
