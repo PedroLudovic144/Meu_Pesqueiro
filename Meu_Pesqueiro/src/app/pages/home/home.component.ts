@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule, FormsModule],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
 })
 export class HomeComponent {
 pesqueiros = [
@@ -14,7 +17,19 @@ pesqueiros = [
   local = '';
   peixes = '';
   filtro = '';
-
+  constructor(private router: Router) {}
+  irParaHome(){
+    this.router.navigate(['/home']);
+  }
+  irParaContato(){
+    this.router.navigate(['/contato']);
+  }
+  irParaEquipe(){
+    this.router.navigate(['/equipe']);
+  }
+  Sair(){
+    this.router.navigate(['/login']);
+  }
   adicionar() {
     const novo = {
       id: Date.now(),
