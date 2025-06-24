@@ -1,11 +1,18 @@
-.contato-container {
-  padding: 20px;
-  background-color: #A6D4FA;
-  border-radius: 8px;
-  max-width: 400px;
-  margin: auto;
+.container {
+  text-align: center;
+  margin-top: 50px;
 }
+
 textarea {
-  width: 100%;
+  width: 250px;
   height: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+button {
+  width: 200px;
+  margin-top: 15px;
 }

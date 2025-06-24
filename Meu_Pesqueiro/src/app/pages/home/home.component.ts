@@ -59,12 +59,10 @@ pesqueiros = [
   const index = this.pesqueiros.findIndex(p => p.id === id);
   if (index !== -1) {
     const pesqueiro = this.pesqueiros[index];
-    // Preenche os campos
     this.nome = pesqueiro.nome;
     this.local = pesqueiro.local;
     this.peixes = pesqueiro.peixes;
     this.editandoId = pesqueiro.id;
-    // Remove da lista temporariamente
     this.pesqueiros.splice(index, 1);
   }
 }
